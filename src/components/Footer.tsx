@@ -33,18 +33,18 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "Accueil", href: "/" },
-    { name: "À propos", href: "/about" },
-    { name: "Mes créations", href: "/creations" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "My Work", href: "/creations" },
     { name: "Contact", href: "/contact" },
   ];
 
   const services = [
-    "Vidéos publicitaires",
-    "Films de mariage",
-    "Clips musicaux",
-    "Vidéos corporate",
-    "Documentaires",
+    "Commercials",
+    "Wedding Films",
+    "Music Videos",
+    "Corporate Videos",
+    "Documentaries",
     "Post-production",
   ];
 
@@ -80,11 +80,14 @@ const Footer = () => {
                   </div>
                   </div>
                 </Link> */}
-                <p className="text-gray-400 leading-relaxed">
-                  Créateur de rêves visuels. Je transforme vos idées en
-                  histoires cinématographiques captivantes qui marquent les
-                  esprits.
-                </p>
+                <div className="text-gray-400 leading-relaxed">
+                  <p>Filmmaker & Creative Director.</p>
+                  <p>
+                    I create films, commercials and music videos with a strong
+                    focus on visual storytelling, cinematic imagery and
+                    distinctive creative direction.
+                  </p>
+                </div>
                 <div className="flex space-x-4">
                   {socialLinks.map((social) => {
                     const Icon = social.icon;
@@ -95,7 +98,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 transition-all duration-300 ${social.color} hover:bg-gray-700`}
-                        aria-label={`Suivez-nous sur ${social.name}`}
+                        aria-label={`Follow us on ${social.name}`}
                       >
                         <Icon className="w-5 h-5" />
                       </a>
@@ -168,23 +171,18 @@ const Footer = () => {
                     <Mail className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-gray-400">thirdfade@gmail.com</p>
-                      <p className="text-sm text-gray-500">Réponse sous 24h</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Phone className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-gray-400">+33 6 12 34 56 78</p>
-                      <p className="text-sm text-gray-500">Lun-Ven 9h-18h</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-gray-400">Hasselt, Belgique</p>
-                      <p className="text-sm text-gray-500">
-                        Déplacements possibles
-                      </p>
+                      <p className="text-gray-400">Leuven, Belgium</p>
                     </div>
                   </div>
                 </div>
@@ -228,7 +226,7 @@ const Footer = () => {
               className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 text-gray-400 cursor-pointer hover:text-white px-4 py-2 rounded-lg transition-all duration-300"
             >
               <ArrowUp className="w-4 h-4" />
-              <span className="text-sm">Retour en haut</span>
+              <span className="text-sm">Back to top</span>
             </motion.button>
           </div>
         </div>
