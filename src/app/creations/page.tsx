@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Calendar, Clock, Eye, Filter, Play, Search } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Creations() {
@@ -244,12 +245,12 @@ export default function Creations() {
               memorable.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-300">
+              <Link
+                href="/contact"
+                className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-300"
+              >
                 Start a Project
-              </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-black transition-all duration-300">
-                See More Projects
-              </button>
+              </Link>
             </div>
           </motion.div>
         </div>
