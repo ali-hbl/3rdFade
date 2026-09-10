@@ -163,7 +163,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl font-bold font-playfair text-white mb-6">
-              LATEST CREATIONS
+              Latest Creations
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Discover my latest projects and explore the diversity of my
