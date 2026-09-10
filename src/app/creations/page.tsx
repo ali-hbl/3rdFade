@@ -11,16 +11,16 @@ export default function Creations() {
 
   const categories = [
     { id: "all", name: "All Projects" },
-    { id: "commercial", name: "Films" },
-    { id: "wedding", name: "Commercials" },
-    { id: "corporate", name: "Music videos" },
+    { id: "films", name: "Films" },
+    { id: "commercial", name: "Commercials" },
+    { id: "musicVideos", name: "Music videos" },
   ];
 
   const projects = [
     {
       id: 1,
       title: "Who’s Lying",
-      category: "commercial",
+      category: "films",
       duration: "13:44",
       // views: "125K",
       date: "2025",
@@ -32,7 +32,7 @@ export default function Creations() {
     {
       id: 2,
       title: "Goldorak",
-      category: "commercial",
+      category: "films",
       duration: "8:12",
       // views: "89K",
       date: "2026",
@@ -44,7 +44,7 @@ export default function Creations() {
     {
       id: 3,
       title: "Lonely time",
-      category: "corporate",
+      category: "musicVideos",
       duration: "3:14",
       // views: "256K",
       date: "2025",
