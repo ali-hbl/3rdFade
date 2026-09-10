@@ -1,8 +1,23 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { ArrowRight, Award, Film, Play, Users } from 'lucide-react';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import { ArrowRight, Award, Film, Play, Users } from "lucide-react";
+import Link from "next/link";
+
+const featuredWorks = [
+  {
+    title: "COMMERCIALS",
+    subtitle: "Visual campaigns designed to leave a lasting impression.",
+  },
+  {
+    title: "MUSIC VIDEOS",
+    subtitle: "Imagery in rhythm with your musical universe.",
+  },
+  {
+    title: "STORYTELLING / FILMS",
+    subtitle: "Cinematic stories that bring ideas to life.",
+  },
+];
 
 export default function Home() {
   return (
@@ -13,7 +28,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800">
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
-        
+
         {/* Content */}
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <motion.div
@@ -24,12 +39,12 @@ export default function Home() {
           >
             {/* Main Title */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-playfair">
-              <span className="block text-white">Créateur de</span>
+              <span className="block text-white">FILMMAKER &</span>
               <span className="block bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
-                Rêves Visuels
+                CREATIVE DIRECTOR
               </span>
             </h1>
-            
+
             {/* Subtitle */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -37,10 +52,11 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
             >
-              Je transforme vos idées en histoires cinématographiques captivantes. 
-              Chaque projet est une nouvelle aventure créative.
+              I create films, commercials and music videos with a strong focus
+              on visual storytelling, cinematic imagery and distinctive creative
+              direction.
             </motion.p>
-            
+
             {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -53,20 +69,20 @@ export default function Home() {
                 className="group bg-gradient-to-r from-red-500 to-orange-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-300 flex items-center space-x-2"
               >
                 <Play className="w-5 h-5" />
-                <span>Voir mes créations</span>
+                <span>Latest Creations</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-              
+
               <Link
                 href="/contact"
                 className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-black transition-all duration-300"
               >
-                Travaillons ensemble
+                Let's Collaborate
               </Link>
             </motion.div>
           </motion.div>
         </div>
-        
+
         {/* Scroll Indicator */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -102,24 +118,24 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center mx-auto">
                 <Film className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-4xl font-bold text-white">150+</h3>
-              <p className="text-gray-400 text-lg">Projets réalisés</p>
+              <h3 className="text-4xl font-bold text-white">500K+</h3>
+              <p className="text-gray-400 text-lg">Views on a single project</p>
             </div>
-            
+
             <div className="space-y-4">
               <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center mx-auto">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-4xl font-bold text-white">25+</h3>
-              <p className="text-gray-400 text-lg">Récompenses</p>
+              <h3 className="text-4xl font-bold text-white">Art Direction</h3>
+              <p className="text-gray-400 text-lg">& ORIGINAL STORYTELLING</p>
             </div>
-            
+
             <div className="space-y-4">
               <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center mx-auto">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-4xl font-bold text-white">100+</h3>
-              <p className="text-gray-400 text-lg">Clients satisfaits</p>
+              <h3 className="text-4xl font-bold text-white">FROM CONCEPT</h3>
+              <p className="text-gray-400 text-lg">TO FINAL EDIT</p>
             </div>
           </motion.div>
         </div>
@@ -136,20 +152,21 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl font-bold font-playfair text-white mb-6">
-              Dernières Créations
+              LATEST CREATIONS
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Découvrez mes projets les plus récents et laissez-vous inspirer par la diversité de mes créations.
+              Discover my latest projects and explore the diversity of my
+              creative work.
             </p>
           </motion.div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
+            {featuredWorks.map((work, index) => (
               <motion.div
-                key={item}
+                key={work.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: item * 0.2 }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 className="group cursor-pointer"
               >
@@ -161,22 +178,20 @@ export default function Home() {
                 </div>
                 <div className="mt-4">
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    Projet Cinématographique {item}
+                    {work.title}
                   </h3>
-                  <p className="text-gray-400">
-                    Description du projet et de son impact créatif.
-                  </p>
+                  <p className="text-gray-400">{work.subtitle}</p>
                 </div>
               </motion.div>
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Link
               href="/creations"
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-red-500 to-orange-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-300"
             >
-              <span>Voir toutes les créations</span>
+              <span>See All Creations</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>

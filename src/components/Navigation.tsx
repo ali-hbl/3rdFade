@@ -22,8 +22,8 @@ const Navigation = () => {
 
   const navItems = [
     { href: "/", label: "Intro", icon: Video },
-    { href: "/about", label: "À propos", icon: User },
-    { href: "/creations", label: "Mes créations", icon: Film },
+    { href: "/about", label: "About", icon: User },
+    { href: "/creations", label: "Latest Creations", icon: Film },
     { href: "/contact", label: "Contact", icon: Mail },
   ];
 

@@ -15,16 +15,19 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "3rd Fade | Créations vidéos",
-  description: "Découvrez mes créations vidéo professionnelles. Portfolio d'un vidéographe passionné par l'art cinématographique et la narration visuelle.",
-  keywords: "vidéographe, portfolio, cinéma, vidéo, création, montage, réalisation, edit, capcut",
+  title: "3rd Fade | FILMMAKER & CREATIVE DIRECTOR",
+  description:
+    "Discover my professional video creations. Portfolio of a videographer passionate about cinematic art and visual storytelling.",
+  keywords:
+    "videographer, portfolio, cinema, video, creation, editing, production, post-production, capcut",
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
   },
   authors: [{ name: "3rd Fade" }],
   openGraph: {
     title: "3rd Fade | Créations Cinématographiques",
-    description: "Découvrez mes créations vidéo professionnelles. Portfolio d'un vidéographe passionné par l'art cinématographique et la narration visuelle.",
+    description:
+      "Découvrez mes créations vidéo professionnelles. Portfolio d'un vidéographe passionné par l'art cinématographique et la narration visuelle.",
     type: "website",
     images: [
       {
@@ -48,9 +51,7 @@ export default function RootLayout({
         className={`${inter.variable} ${playfair.variable} antialiased bg-black text-white`}
       >
         <Navigation />
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <main className="min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>
