@@ -27,7 +27,7 @@ export default function Creations() {
       thumbnail: "/thumbnails/WHO'S_LYING_LITE.jpg",
       url: "https://www.youtube.com/watch?v=xs76OuD5ZNU",
       description:
-        "Une campagne publicitaire sophistiquée mettant en valeur l&apos;élégance et le raffinement.",
+        "A young woman is forced to flee the city when she discovers that a mysterious organization of mutants is hunting her. With the help of a trusted friend, she must escape while uncovering a power within herself she never knew existed.",
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ export default function Creations() {
       thumbnail: "/thumbnails/GOLDORAK.png",
       url: "https://www.youtube.com/watch?v=52SvGtmte3Q",
       description:
-        "Un film de mariage émouvant capturant les moments les plus précieux de cette journée spéciale.",
+        "A cinematic tribute reimagining the iconic Goldorak universe through a modern visual approach. The project reached over 500K views, combining nostalgia, storytelling and cinematic imagery.",
     },
     {
       id: 3,
@@ -51,11 +51,11 @@ export default function Creations() {
       thumbnail: "/thumbnails/LONELY_TIME.png",
       url: "https://www.youtube.com/watch?v=JNwDhtfoo78",
       description:
-        "Un clip musical créatif explorant les thèmes de l&apos;introspection et de la croissance personnelle.",
+        "A music video exploring the loneliness hidden behind our hyperconnected lives. Surrounded by screens and social networks, we have never been more connected - yet we can still feel deeply alone.",
     },
     {
       id: 4,
-      title: "Pub voiture AERON",
+      title: "AERON Car Commercial",
       category: "commercial",
       duration: "0:35",
       views: "67K",
@@ -63,29 +63,7 @@ export default function Creations() {
       thumbnail: "/thumbnails/AERON_CAR.png",
       url: "https://www.youtube.com/shorts/OhRZ5IpEPVM",
       description:
-        "Un documentaire inspirant sur le parcours de jeunes entrepreneurs passionnés.",
-    },
-    {
-      id: 5,
-      title: "Vidéo Corporate - Tech Startup",
-      category: "corporate",
-      duration: "3:20",
-      views: "45K",
-      date: "2023",
-      thumbnail: "/api/placeholder/600/400",
-      description:
-        "Présentation dynamique d&apos;une startup innovante dans le domaine de la technologie.",
-    },
-    {
-      id: 6,
-      title: "Film de Mariage - Destination",
-      category: "wedding",
-      duration: "12:15",
-      views: "134K",
-      date: "2023",
-      thumbnail: "/api/placeholder/600/400",
-      description:
-        "Un mariage de rêve dans un cadre idyllique, capturé avec poésie et émotion.",
+        "A cinematic car commercial created to highlight AERON's design, movement and visual identity.",
     },
   ];
 
@@ -164,10 +142,10 @@ export default function Creations() {
             <div className="text-center py-20">
               <Filter className="w-16 h-16 text-gray-400 mx-auto mb-4" />
               <h3 className="text-2xl font-semibold text-white mb-2">
-                Aucun projet trouvé
+                No projects found
               </h3>
               <p className="text-gray-400">
-                Essayez de modifier vos critères de recherche.
+                Try adjusting your search or filter criteria.
               </p>
             </div>
           ) : (

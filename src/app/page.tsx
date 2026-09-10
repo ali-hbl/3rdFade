@@ -7,21 +7,21 @@ import Link from "next/link";
 
 const featuredWorks = [
   {
-    title: "GOLDORAK",
+    title: "Goldorak",
     subtitle:
       "A cinematic tribute reimagining the iconic Goldorak universe through a modern visual approach. The project reached over 500K views, combining nostalgia, storytelling and cinematic imagery.",
     thumbnail: "/thumbnails/GOLDORAK.png",
     url: "https://www.youtube.com/watch?v=52SvGtmte3Q",
   },
   {
-    title: "WHO'S LYING",
+    title: "Who's Lying?",
     subtitle:
       "A young woman is forced to flee the city when she discovers that a mysterious organization of mutants is hunting her. With the help of a trusted friend, she must escape while uncovering a power within herself she never knew existed.",
     thumbnail: "/thumbnails/WHO'S_LYING_LITE.jpg",
     url: "https://www.youtube.com/watch?v=xs76OuD5ZNU",
   },
   {
-    title: "LONELY TIME",
+    title: "Lonely Time",
     subtitle:
       "A music video exploring the loneliness hidden behind our hyperconnected lives. Surrounded by screens and social networks, we have never been more connected - yet we can still feel deeply alone.",
     thumbnail: "/thumbnails/LONELY_TIME.png",

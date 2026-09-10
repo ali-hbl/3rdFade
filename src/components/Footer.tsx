@@ -39,14 +39,7 @@ const Footer = () => {
     { name: "Contact", href: "/contact" },
   ];
 
-  const services = [
-    "Commercials",
-    "Wedding Films",
-    "Music Videos",
-    "Corporate Videos",
-    "Documentaries",
-    "Post-production",
-  ];
+  const services = ["Films", "Commercials", "Music Videos"];
 
   return (
     <footer className="bg-black border-t border-gray-800">
@@ -67,19 +60,6 @@ const Footer = () => {
                 <h3 className="text-lg font-semibold text-white mb-6">
                   3rd Fade
                 </h3>
-                {/* <Link href="/" className="flex items-center space-x-3 pt-1 lg:pt-2">
-                  <div className="relative w-48 sm:w-56 lg:w-64" style={{ aspectRatio: '1792 / 513' }}>
-                    <div className="relative w-40" style={{ aspectRatio: "1792 / 513" }}>
-                    <Image
-                      src="/3RD_FADE_TRANSPARENT.png"
-                      alt="3rd Fade Logo"
-                      fill
-                      className="object-contain"
-                      priority
-                    />
-                  </div>
-                  </div>
-                </Link> */}
                 <div className="text-gray-400 leading-relaxed">
                   <p>Filmmaker & Creative Director.</p>
                   <p>

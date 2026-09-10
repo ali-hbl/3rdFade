@@ -70,19 +70,16 @@ export default function Contact() {
       icon: Mail,
       title: "Email",
       details: "thirdfade@gmail.com",
-      description: "Response within 24 hours",
     },
     {
       icon: Phone,
       title: "Phone",
       details: "+33 6 12 34 56 78",
-      description: "Mon-Fri, 9 AM-6 PM",
     },
     {
       icon: MapPin,
       title: "Location",
-      details: "Paris, France",
-      description: "Travel available",
+      details: "Leuven, Belgium",
     },
   ];
 
@@ -154,9 +151,6 @@ export default function Contact() {
                         <p className="text-lg text-gray-300 mb-1">
                           {info.details}
                         </p>
-                        {/* <p className="text-sm text-gray-400">
-                          {info.description}
-                        </p> */}
                       </div>
                     </div>
                   );
@@ -175,10 +169,6 @@ export default function Contact() {
                     Available for freelance projects and creative
                     collaborations.
                   </p>
-                  {/* <p>• Lundi - Vendredi : 9h00 - 18h00</p>
-                  <p>• Week-ends : Sur rendez-vous</p>
-                  <p>• Réponse email : Sous 24h</p>
-                  <p>• Appels : Disponible selon planning</p> */}
                 </div>
               </div>
             </motion.div>
@@ -245,7 +235,7 @@ export default function Contact() {
                           onChange={handleInputChange}
                           required
                           className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-red-500 transition-colors"
-                          placeholder="votre@email.com"
+                          placeholder="your@email.com"
                         />
                       </div>
                     </div>

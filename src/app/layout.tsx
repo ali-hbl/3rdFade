@@ -25,16 +25,16 @@ export const metadata: Metadata = {
   },
   authors: [{ name: "3rd Fade" }],
   openGraph: {
-    title: "3rd Fade | Créations Cinématographiques",
+    title: "3rd Fade | Cinematic Creations",
     description:
-      "Découvrez mes créations vidéo professionnelles. Portfolio d'un vidéographe passionné par l'art cinématographique et la narration visuelle.",
+      "Discover my professional video creations. Portfolio of a filmmaker passionate about cinematic art and visual storytelling.",
     type: "website",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "3rd Fade - Portfolio Vidéographe",
+        alt: "3rd Fade - Filmmaker Portfolio",
       },
     ],
   },
@@ -46,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <body
         className={`${inter.variable} ${playfair.variable} antialiased bg-black text-white`}
       >

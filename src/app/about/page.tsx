@@ -7,48 +7,30 @@ import Image from "next/image";
 export default function About() {
   const skills = [
     {
-      name: "DIRECTING",
+      name: "Directing",
       icon: Video,
       description:
         "Turning ideas into compelling scenes through storytelling, performance and visual direction.",
     },
     {
-      name: "EDITING",
+      name: "Editing",
       icon: Edit3,
       description:
         "Shaping rhythm, emotion and narrative through precise and purposeful editing.",
     },
     {
-      name: "CINEMATOGRAPHY",
+      name: "Cinematography",
       icon: Camera,
       description:
         "Creating strong compositions and camera movements that serve the story and its atmosphere.",
     },
     {
-      name: "POST-PRODUCTION",
+      name: "Post-Production",
       icon: Edit3,
       description:
         "Refining every project through sound design, original music, color, visual effects and final finishing.",
     },
   ];
-
-  // const achievements = [
-  //   {
-  //     year: "2024",
-  //     title: "Prix du Meilleur Court-Métrage",
-  //     description: "Festival International du Film Indépendant",
-  //   },
-  //   {
-  //     year: "2023",
-  //     title: "Réalisateur de l'Année",
-  //     description: "Association des Créateurs Vidéo",
-  //   },
-  //   {
-  //     year: "2022",
-  //     title: "Meilleure Direction Artistique",
-  //     description: "Festival de Cannes - Section Court",
-  //   },
-  // ];
 
   return (
     <div className="min-h-screen pt-16">
@@ -95,7 +77,7 @@ export default function About() {
               viewport={{ once: true }}
             >
               <h2 className="text-4xl font-bold font-playfair text-white mb-8">
-                MY JOURNEY
+                My Journey
               </h2>
               <div className="space-y-6 text-gray-300">
                 <p className="text-lg leading-relaxed">
@@ -138,7 +120,7 @@ export default function About() {
                 <div className="text-center">
                   <Image
                     src="/picture3.png"
-                    alt="Photo de profil"
+                    alt="Profile photo"
                     fill
                     className="mx-auto mb-4 object-cover object-[0px_-80px] sm:object-[0px_-40px] rounded-3xl"
                     priority
@@ -153,21 +135,6 @@ export default function About() {
       {/* Skills Section */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-black">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-bold font-playfair text-white mb-6">
-              Mes compétences
-            </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Une expertise technique solide au service de la créativité
-            </p>
-          </motion.div> */}
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {skills.map((skill, index) => {
               const Icon = skill.icon;
@@ -197,54 +164,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* Achievements Section */}
-      {/* <section className="py-20 bg-black">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-bold font-playfair text-white mb-6">
-              Récompenses & Reconnaissance
-            </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Des moments de fierté qui marquent mon parcours professionnel
-            </p>
-          </motion.div>
-
-          <div className="space-y-8">
-            {achievements.map((achievement, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                className="flex items-center space-x-6 p-6 bg-gray-800/30 rounded-xl hover:bg-gray-800/50 transition-colors"
-              >
-                <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Award className="w-8 h-8 text-white" />
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center space-x-4 mb-2">
-                    <h3 className="text-xl font-semibold text-white">
-                      {achievement.title}
-                    </h3>
-                    <span className="text-red-500 font-bold">
-                      {achievement.year}
-                    </span>
-                  </div>
-                  <p className="text-gray-400">{achievement.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* Values Section */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-black">
@@ -280,7 +199,7 @@ export default function About() {
                 <Star className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-semibold text-white mb-4">
-                EXCELLENCE
+                Excellence
               </h3>
               <p className="text-gray-400">
                 I pay close attention to every detail, from the initial concept
@@ -300,7 +219,7 @@ export default function About() {
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-semibold text-white mb-4">
-                COLLABORATION
+                Collaboration
               </h3>
               <p className="text-gray-400">
                 The best ideas often grow through collaboration. I value clear
@@ -320,7 +239,7 @@ export default function About() {
                 <Clock className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-semibold text-white mb-4">
-                PUNCTUALITY
+                Punctuality
               </h3>
               <p className="text-gray-400">
                 Creativity also requires reliability. I take deadlines seriously
