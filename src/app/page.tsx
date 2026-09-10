@@ -2,20 +2,30 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Award, Film, Play, Users } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const featuredWorks = [
   {
-    title: "COMMERCIALS",
-    subtitle: "Visual campaigns designed to leave a lasting impression.",
+    title: "GOLDORAK",
+    subtitle:
+      "A cinematic tribute reimagining the iconic Goldorak universe through a modern visual approach. The project reached over 500K views, combining nostalgia, storytelling and cinematic imagery.",
+    thumbnail: "/thumbnails/GOLDORAK.png",
+    url: "https://www.youtube.com/watch?v=52SvGtmte3Q",
   },
   {
-    title: "MUSIC VIDEOS",
-    subtitle: "Imagery in rhythm with your musical universe.",
+    title: "WHO'S LYING",
+    subtitle:
+      "A young woman is forced to flee the city when she discovers that a mysterious organization of mutants is hunting her. With the help of a trusted friend, she must escape while uncovering a power within herself she never knew existed.",
+    thumbnail: "/thumbnails/WHO'S_LYING_LITE.jpg",
+    url: "https://www.youtube.com/watch?v=xs76OuD5ZNU",
   },
   {
-    title: "STORYTELLING / FILMS",
-    subtitle: "Cinematic stories that bring ideas to life.",
+    title: "LONELY TIME",
+    subtitle:
+      "A music video exploring the loneliness hidden behind our hyperconnected lives. Surrounded by screens and social networks, we have never been more connected - yet we can still feel deeply alone.",
+    thumbnail: "/thumbnails/LONELY_TIME.png",
+    url: "https://www.youtube.com/watch?v=JNwDhtfoo78",
   },
 ];
 
@@ -39,7 +49,8 @@ export default function Home() {
           >
             {/* Main Title */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-playfair">
-              <span className="block text-white">FILMMAKER &</span>
+              <span className="block text-white">FILMMAKER</span>
+              <span className="block text-white">&</span>
               <span className="block bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
                 CREATIVE DIRECTOR
               </span>
@@ -127,15 +138,15 @@ export default function Home() {
                 <Award className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-4xl font-bold text-white">Art Direction</h3>
-              <p className="text-gray-400 text-lg">& ORIGINAL STORYTELLING</p>
+              <p className="text-gray-400 text-lg">& Original Storytelling</p>
             </div>
 
             <div className="space-y-4">
               <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center mx-auto">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-4xl font-bold text-white">FROM CONCEPT</h3>
-              <p className="text-gray-400 text-lg">TO FINAL EDIT</p>
+              <h3 className="text-4xl font-bold text-white">From Concept</h3>
+              <p className="text-gray-400 text-lg">To Final Edit</p>
             </div>
           </motion.div>
         </div>
@@ -171,10 +182,25 @@ export default function Home() {
                 className="group cursor-pointer"
               >
                 <div className="relative overflow-hidden rounded-lg bg-gray-800 aspect-video">
-                  <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center">
-                    <Play className="w-16 h-16 text-white opacity-80 group-hover:opacity-100 transition-opacity" />
-                  </div>
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                  <a
+                    href={work.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Watch ${work.title} on YouTube`}
+                    className="absolute inset-0"
+                  >
+                    <Image
+                      src={work.thumbnail}
+                      alt={work.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center">
+                      <Play className="w-16 h-16 text-white opacity-80 group-hover:opacity-100 transition-opacity" />
+                    </div>
+                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
+                  </a>
                 </div>
                 <div className="mt-4">
                   <h3 className="text-xl font-semibold text-white mb-2">

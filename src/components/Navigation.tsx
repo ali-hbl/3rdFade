@@ -23,7 +23,7 @@ const Navigation = () => {
   const navItems = [
     { href: "/", label: "Intro", icon: Video },
     { href: "/about", label: "About", icon: User },
-    { href: "/creations", label: "Latest Creations", icon: Film },
+    { href: "/creations", label: "My Work", icon: Film },
     { href: "/contact", label: "Contact", icon: Mail },
   ];
 
@@ -35,7 +35,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="relative w-80 h-80">
+            <div className="relative w-90 h-90">
               <Image
                 src="/LOGO_3RD_FADE_TRANSPARENT.png"
                 alt="3rd Fade Logo"
