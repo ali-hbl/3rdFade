@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 type FaqItem = {
   question: string;
@@ -16,34 +16,39 @@ type FaqSectionProps = {
 
 const defaultItems: FaqItem[] = [
   {
-    question: "Quel est le délai de livraison moyen ?",
+    question: "What is the average delivery time?",
     answer:
-      "Le délai varie selon la complexité du projet. Pour un court-métrage simple, comptez 2-3 semaines. Pour des projets plus complexes, cela peut aller jusqu'à 6-8 semaines.",
+      "For a smaller-scale project, production typically takes around 2–3 weeks. More complex productions may require 6–8 weeks, depending on the scope and specific requirements of the project.",
   },
   {
-    question: "Proposez-vous des révisions ?",
+    question: "Do you offer revisions?",
     answer:
-      "Oui, j'inclus généralement 2-3 révisions dans mes forfaits pour m'assurer que le résultat final correspond parfaitement à vos attentes.",
+      "Yes. I generally include revisions as part of the creative process, based on the scope agreed upon at the beginning of the project.",
   },
   {
-    question: "Travaillez-vous en équipe ?",
+    question: "Do you work alone or as part of a team?",
     answer:
-      "Je peux travailler seul ou en équipe selon les besoins du projet. J'ai un réseau de professionnels (monteurs, coloristes, musiciens) que je peux mobiliser.",
+      "I’m comfortable working independently as well as collaborating within an existing team. I adapt easily to different workflows, creative environments and project requirements.",
   },
   {
-    question: "Quels formats de livraison proposez-vous ?",
+    question: "What delivery formats do you offer?",
     answer:
-      "Je livre dans tous les formats standards (MP4, MOV, AVI) et en différentes résolutions selon vos besoins (HD, 4K, etc.).",
+      "Projects can be delivered in formats such as MP4, MOV or AVI, with resolutions up to 4K,depending on the project requirements and intended platform.",
   },
 ];
 
-export function FaqSection({ title, description, items, sectionClassName }: FaqSectionProps) {
+export function FaqSection({
+  title,
+  description,
+  items,
+  sectionClassName,
+}: FaqSectionProps) {
   const sectionClasses = [
-    'py-20 bg-gradient-to-r from-gray-900 to-black',
+    "py-20 bg-gradient-to-r from-gray-900 to-black",
     sectionClassName,
   ]
     .filter(Boolean)
-    .join(' ');
+    .join(" ");
 
   const faqs = items?.length ? items : defaultItems;
 
@@ -57,7 +62,9 @@ export function FaqSection({ title, description, items, sectionClassName }: FaqS
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold font-playfair text-white mb-6">{title}</h2>
+          <h2 className="text-4xl font-bold font-playfair text-white mb-6">
+            {title}
+          </h2>
           {description ? (
             <p className="text-xl text-gray-400">{description}</p>
           ) : null}
@@ -73,7 +80,9 @@ export function FaqSection({ title, description, items, sectionClassName }: FaqS
               viewport={{ once: true }}
               className="bg-gray-800/50 rounded-xl p-6"
             >
-              <h3 className="text-xl font-semibold text-white mb-3">{faq.question}</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">
+                {faq.question}
+              </h3>
               <p className="text-gray-400 leading-relaxed">{faq.answer}</p>
             </motion.div>
           ))}
