@@ -74,7 +74,7 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      details: "+33 6 12 34 56 78",
+      details: "+33 6 12 34 56 78", // TODO: change?
     },
     {
       icon: MapPin,
