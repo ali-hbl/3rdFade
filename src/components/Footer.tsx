@@ -1,43 +1,51 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { ArrowUp, ExternalLink, Instagram, Mail, MapPin, Phone, Youtube } from 'lucide-react';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import {
+  ArrowUp,
+  ExternalLink,
+  Instagram,
+  Mail,
+  MapPin,
+  Phone,
+  Youtube,
+} from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const socialLinks = [
     {
-      name: 'Instagram',
-      href: 'https://instagram.com/3rdfade',
+      name: "Instagram",
+      href: "https://instagram.com/3rdfade",
       icon: Instagram,
-      color: 'hover:text-pink-500',
+      color: "hover:text-pink-500",
     },
     {
-      name: 'YouTube',
-      href: 'https://youtube.com/@3rdfade',
+      name: "YouTube",
+      href: "https://youtube.com/@3rdfade",
       icon: Youtube,
-      color: 'hover:text-red-500',
+      color: "hover:text-red-500",
     },
   ];
 
   const quickLinks = [
-    { name: 'Accueil', href: '/' },
-    { name: 'À propos', href: '/about' },
-    { name: 'Mes créations', href: '/creations' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Accueil", href: "/" },
+    { name: "À propos", href: "/about" },
+    { name: "Mes créations", href: "/creations" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const services = [
-    'Vidéos publicitaires',
-    'Films de mariage',
-    'Clips musicaux',
-    'Vidéos corporate',
-    'Documentaires',
-    'Post-production',
+    "Vidéos publicitaires",
+    "Films de mariage",
+    "Clips musicaux",
+    "Vidéos corporate",
+    "Documentaires",
+    "Post-production",
   ];
 
   return (
@@ -56,7 +64,9 @@ const Footer = () => {
                 className="space-y-6"
               >
                 {/* Logo */}
-                <h3 className="text-lg font-semibold text-white mb-6">3rd Fade</h3>
+                <h3 className="text-lg font-semibold text-white mb-6">
+                  3rd Fade
+                </h3>
                 {/* <Link href="/" className="flex items-center space-x-3 pt-1 lg:pt-2">
                   <div className="relative w-48 sm:w-56 lg:w-64" style={{ aspectRatio: '1792 / 513' }}>
                     <div className="relative w-40" style={{ aspectRatio: "1792 / 513" }}>
@@ -71,8 +81,9 @@ const Footer = () => {
                   </div>
                 </Link> */}
                 <p className="text-gray-400 leading-relaxed">
-                  Créateur de rêves visuels. Je transforme vos idées en histoires 
-                  cinématographiques captivantes qui marquent les esprits.
+                  Créateur de rêves visuels. Je transforme vos idées en
+                  histoires cinématographiques captivantes qui marquent les
+                  esprits.
                 </p>
                 <div className="flex space-x-4">
                   {socialLinks.map((social) => {
@@ -102,7 +113,9 @@ const Footer = () => {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-lg font-semibold text-white mb-6">Navigation</h3>
+                <h3 className="text-lg font-semibold text-white mb-6">
+                  Navigation
+                </h3>
                 <ul className="space-y-3">
                   {quickLinks.map((link) => (
                     <li key={link.name}>
@@ -126,7 +139,9 @@ const Footer = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-lg font-semibold text-white mb-6">Services</h3>
+                <h3 className="text-lg font-semibold text-white mb-6">
+                  Services
+                </h3>
                 <ul className="space-y-3">
                   {services.map((service) => (
                     <li key={service} className="text-gray-400">
@@ -145,7 +160,9 @@ const Footer = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-lg font-semibold text-white mb-6">Contact</h3>
+                <h3 className="text-lg font-semibold text-white mb-6">
+                  Contact
+                </h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <Mail className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
@@ -165,7 +182,9 @@ const Footer = () => {
                     <MapPin className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-gray-400">Hasselt, Belgique</p>
-                      <p className="text-sm text-gray-500">Déplacements possibles</p>
+                      <p className="text-sm text-gray-500">
+                        Déplacements possibles
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -199,7 +218,7 @@ const Footer = () => {
                 </a>
               </div>
             </motion.div>
-            
+
             <motion.button
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

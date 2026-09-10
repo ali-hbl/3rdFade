@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { Film, Mail, Menu, User, Video, X } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { Film, Mail, Menu, User, Video, X } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,37 +16,34 @@ const Navigation = () => {
       setScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { href: '/', label: 'Intro', icon: Video },
-    { href: '/about', label: 'À propos', icon: User },
-    { href: '/creations', label: 'Mes créations', icon: Film },
-    { href: '/contact', label: 'Contact', icon: Mail },
+    { href: "/", label: "Intro", icon: Video },
+    { href: "/about", label: "À propos", icon: User },
+    { href: "/creations", label: "Mes créations", icon: Film },
+    { href: "/contact", label: "Contact", icon: Mail },
   ];
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-black/90 backdrop-blur-md' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/90 backdrop-blur-md" : "bg-transparent"}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="relative w-40 h-40">
+            <div className="relative w-80 h-80">
               <Image
-                src="/3RD_FADE_TRANSPARENT.png"
+                src="/LOGO_3RD_FADE_TRANSPARENT.png"
                 alt="3rd Fade Logo"
                 fill
                 className="object-contain"
                 priority
               />
             </div>
-            {/* <span className="text-xl font-bold font-playfair">3rd Fade</span> */}
           </Link>
 
           {/* Desktop Navigation */}
@@ -60,8 +57,8 @@ const Navigation = () => {
                   href={item.href}
                   className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-200 ${
                     isActive
-                      ? 'text-red-500 bg-red-500/10'
-                      : 'text-gray-300 hover:text-white hover:bg-white/5'
+                      ? "text-red-500 bg-red-500/10"
+                      : "text-gray-300 hover:text-white hover:bg-white/5"
                   }`}
                 >
                   <Icon className="w-4 h-4" />
@@ -94,8 +91,8 @@ const Navigation = () => {
                     onClick={() => setIsOpen(false)}
                     className={`flex items-center space-x-3 px-3 py-3 rounded-lg transition-all duration-200 ${
                       isActive
-                        ? 'text-red-500 bg-red-500/10'
-                        : 'text-gray-300 hover:text-white hover:bg-white/5'
+                        ? "text-red-500 bg-red-500/10"
+                        : "text-gray-300 hover:text-white hover:bg-white/5"
                     }`}
                   >
                     <Icon className="w-5 h-5" />
