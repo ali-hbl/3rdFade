@@ -7,7 +7,6 @@ import {
   Instagram,
   Mail,
   MapPin,
-  Phone,
   Youtube,
 } from "lucide-react";
 import Link from "next/link";
@@ -151,12 +150,6 @@ const Footer = () => {
                     <Mail className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-gray-400">thirdfade@gmail.com</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Phone className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-gray-400">+33 6 12 34 56 78</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">

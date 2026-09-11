@@ -2,7 +2,7 @@
 
 import { FaqSection } from "@/components/FaqSection";
 import { motion } from "framer-motion";
-import { CheckCircle, Clock, Mail, MapPin, Phone, Send } from "lucide-react";
+import { CheckCircle, Clock, Mail, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 
 export default function Contact() {
@@ -70,11 +70,6 @@ export default function Contact() {
       icon: Mail,
       title: "Email",
       details: "thirdfade@gmail.com",
-    },
-    {
-      icon: Phone,
-      title: "Phone",
-      details: "+33 6 12 34 56 78", // TODO: change?
     },
     {
       icon: MapPin,

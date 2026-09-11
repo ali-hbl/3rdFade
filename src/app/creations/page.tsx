@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, Clock, Eye, Filter, Play, Search } from "lucide-react";
+import { Calendar, Clock, Filter, Play, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -24,7 +24,7 @@ export default function Creations() {
       category: "films",
       duration: "13:44",
       // views: "125K",
-      date: "2025",
+      date: "2026",
       thumbnail: "/thumbnails/WHO'S_LYING_LITE.jpg",
       url: "https://www.youtube.com/watch?v=xs76OuD5ZNU",
       description:
@@ -59,7 +59,7 @@ export default function Creations() {
       title: "AERON Car Commercial",
       category: "commercial",
       duration: "0:35",
-      views: "67K",
+      // views: "67K",
       date: "2026",
       thumbnail: "/thumbnails/AERON_CAR.png",
       url: "https://www.youtube.com/shorts/OhRZ5IpEPVM",
@@ -198,10 +198,6 @@ export default function Creations() {
                           <div className="flex items-center space-x-1">
                             <Clock className="w-4 h-4" />
                             <span className="text-sm">{project.duration}</span>
-                          </div>
-                          <div className="flex items-center space-x-1">
-                            <Eye className="w-4 h-4" />
-                            <span className="text-sm">{project.views}</span>
                           </div>
                         </div>
                         <div className="flex items-center space-x-1">
