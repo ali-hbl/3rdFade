@@ -17,14 +17,14 @@ const featuredWorks = [
     title: "Who's Lying?",
     subtitle:
       "A young woman is forced to flee the city when she discovers that a mysterious organization of mutants is hunting her. With the help of a trusted friend, she must escape while uncovering a power within herself she never knew existed.",
-    thumbnail: "/thumbnails/WHO'S_LYING_LITE.jpg",
+    thumbnail: "/thumbnails/WHO'S_LYING.png",
     url: "https://www.youtube.com/watch?v=xs76OuD5ZNU",
   },
   {
     title: "Lonely Time",
     subtitle:
       "A music video exploring the loneliness hidden behind our hyperconnected lives. Surrounded by screens and social networks, we have never been more connected - yet we can still feel deeply alone.",
-    thumbnail: "/thumbnails/LONELY_TIME.png",
+    thumbnail: "/thumbnails/LONELY_TIMES.png",
     url: "https://www.youtube.com/watch?v=JNwDhtfoo78",
   },
 ];

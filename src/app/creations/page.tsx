@@ -23,9 +23,8 @@ export default function Creations() {
       title: "Who’s Lying",
       category: "films",
       duration: "13:44",
-      // views: "125K",
       date: "2026",
-      thumbnail: "/thumbnails/WHO'S_LYING_LITE.jpg",
+      thumbnail: "/thumbnails/WHO'S_LYING.png",
       url: "https://www.youtube.com/watch?v=xs76OuD5ZNU",
       description:
         "A young woman is forced to flee the city when she discovers that a mysterious organization of mutants is hunting her. With the help of a trusted friend, she must escape while uncovering a power within herself she never knew existed.",
@@ -35,7 +34,6 @@ export default function Creations() {
       title: "Goldorak",
       category: "films",
       duration: "8:12",
-      // views: "89K",
       date: "2026",
       thumbnail: "/thumbnails/GOLDORAK.png",
       url: "https://www.youtube.com/watch?v=52SvGtmte3Q",
@@ -47,9 +45,8 @@ export default function Creations() {
       title: "Lonely time",
       category: "musicVideos",
       duration: "3:14",
-      // views: "256K",
       date: "2025",
-      thumbnail: "/thumbnails/LONELY_TIME.png",
+      thumbnail: "/thumbnails/LONELY_TIMES.png",
       url: "https://www.youtube.com/watch?v=JNwDhtfoo78",
       description:
         "A music video exploring the loneliness hidden behind our hyperconnected lives. Surrounded by screens and social networks, we have never been more connected - yet we can still feel deeply alone.",
@@ -59,12 +56,22 @@ export default function Creations() {
       title: "AERON Car Commercial",
       category: "commercial",
       duration: "0:35",
-      // views: "67K",
       date: "2026",
       thumbnail: "/thumbnails/AERON_CAR.png",
       url: "https://www.youtube.com/shorts/OhRZ5IpEPVM",
       description:
         "A cinematic car commercial created to highlight AERON's design, movement and visual identity.",
+    },
+    {
+      id: 5,
+      title: "Kili Commercial",
+      category: "commercial",
+      duration: "0:33",
+      date: "2026",
+      thumbnail: "/thumbnails/KILI.png",
+      url: "https://youtube.com/shorts/GTBPvoIhOyQ?si=2lUGBLY3vIIarT9Y",
+      description:
+        "Where freshness rises... A fictional commercial created with AI.",
     },
   ];
 
