@@ -32,22 +32,22 @@ const Navigation = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/90 backdrop-blur-md" : "bg-transparent"}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex min-w-0 items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="relative w-90 h-90">
+          <Link href="/" className="flex min-w-0 items-center space-x-3">
+            <div className="relative h-20 w-72 shrink-0 sm:h-24 sm:w-80">
               <Image
                 src="/LOGO_3RD_FADE_TRANSPARENT.png"
                 alt="3rd Fade Logo"
                 fill
-                className="object-contain"
+                className="scale-125 object-contain object-left lg:object-center"
                 priority
               />
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => {
               const Icon = item.icon;
               const isActive = pathname === item.href;
@@ -71,7 +71,10 @@ const Navigation = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-colors"
+            aria-label={
+              isOpen ? "Close navigation menu" : "Open navigation menu"
+            }
+            className="lg:hidden shrink-0 rounded-lg p-2 text-gray-300 transition-colors hover:bg-white/5 hover:text-white"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -79,7 +82,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-black/95 backdrop-blur-md rounded-lg mt-2">
               {navItems.map((item) => {
                 const Icon = item.icon;
