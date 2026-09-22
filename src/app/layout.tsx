@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
+        url: "/LOGO_3RD_FADE_TRANSPARENT.png",
+        width: 1920,
+        height: 1080,
         alt: "3rd Fade - Filmmaker Portfolio",
       },
     ],
