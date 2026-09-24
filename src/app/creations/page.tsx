@@ -73,6 +73,17 @@ export default function Creations() {
       description:
         "Where freshness rises... A fictional commercial created with AI.",
     },
+    {
+      id: 5,
+      title: "NOVA Commercial",
+      category: "commercial",
+      duration: "0:29",
+      date: "2026",
+      thumbnail: "/thumbnails/NOVA_COMMERCIAL.png",
+      url: "https://youtu.be/wS6LaNFqVjU?si=zKyTRX4ix4CYQ67C",
+      description:
+        "A cinematic commercial of a new speaker to explore sound and music with a new dimension.",
+    },
   ];
 
   const filteredProjects = projects.filter((project) => {
