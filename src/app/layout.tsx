@@ -15,6 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.3rdfade.com"),
   title: "3rd Fade | FILMMAKER & CREATIVE DIRECTOR",
   description:
     "Discover my professional video creations. Portfolio of a videographer passionate about cinematic art and visual storytelling.",
